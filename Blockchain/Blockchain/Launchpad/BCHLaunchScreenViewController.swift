@@ -23,6 +23,22 @@ class BCHLaunchScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        goToHome()
+    }
+    
+    private func goToHome() {
+//        let vc = BCHHomeViewController()
+//        view.window?.rootViewController = vc
+//        view.window?.makeKeyAndVisible()
+        
+        let initalBlock = Block()
+        let blockchain = Blockchain(initialBlock: initalBlock)
+        
+        let transaction = Transaction(from: "John", to: "Dan", amount: 31)
+        print("---------------------------------")
+        let block = blockchain.getNextBlock(transactions: [transaction])
+        
+        blockchain.addBlock(block)
     }
 }
 

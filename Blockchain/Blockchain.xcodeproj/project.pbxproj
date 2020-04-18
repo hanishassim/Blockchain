@@ -13,6 +13,11 @@
 		CBD7B23C244AD17D00596DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD7B23B244AD17D00596DA7 /* Assets.xcassets */; };
 		CBD7B248244AD4D300596DA7 /* BCHLaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B247244AD4D300596DA7 /* BCHLaunchScreenView.swift */; };
 		CBD7B24A244ADF5E00596DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD7B249244ADF5E00596DA7 /* LaunchScreen.storyboard */; };
+		CBD7B24D244AE90F00596DA7 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B24C244AE90F00596DA7 /* Transaction.swift */; };
+		CBD7B24F244B50B400596DA7 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B24E244B50B400596DA7 /* Block.swift */; };
+		CBD7B251244B50D700596DA7 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B250244B50D700596DA7 /* Blockchain.swift */; };
+		CBD7B254244B50FF00596DA7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B253244B50FF00596DA7 /* String+Extensions.swift */; };
+		CBD7B257244B514500596DA7 /* BCHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B256244B514500596DA7 /* BCHHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		CBD7B240244AD17D00596DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD7B247244AD4D300596DA7 /* BCHLaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCHLaunchScreenView.swift; sourceTree = "<group>"; };
 		CBD7B249244ADF5E00596DA7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBD7B24C244AE90F00596DA7 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		CBD7B24E244B50B400596DA7 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		CBD7B250244B50D700596DA7 /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
+		CBD7B253244B50FF00596DA7 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		CBD7B256244B514500596DA7 /* BCHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCHHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,9 @@
 		CBD7B231244AD17A00596DA7 /* Blockchain */ = {
 			isa = PBXGroup;
 			children = (
+				CBD7B255244B512000596DA7 /* Controllers */,
+				CBD7B252244B50EE00596DA7 /* Extensions */,
+				CBD7B24B244AE86200596DA7 /* Models */,
 				CBD7B249244ADF5E00596DA7 /* LaunchScreen.storyboard */,
 				CBD7B246244AD4B800596DA7 /* Launchpad */,
 				CBD7B232244AD17A00596DA7 /* AppDelegate.swift */,
@@ -73,6 +86,32 @@
 				CBD7B247244AD4D300596DA7 /* BCHLaunchScreenView.swift */,
 			);
 			path = Launchpad;
+			sourceTree = "<group>";
+		};
+		CBD7B24B244AE86200596DA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBD7B24C244AE90F00596DA7 /* Transaction.swift */,
+				CBD7B24E244B50B400596DA7 /* Block.swift */,
+				CBD7B250244B50D700596DA7 /* Blockchain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBD7B252244B50EE00596DA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBD7B253244B50FF00596DA7 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CBD7B255244B512000596DA7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBD7B256244B514500596DA7 /* BCHHomeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +188,12 @@
 				CBD7B237244AD17B00596DA7 /* BCHLaunchScreenViewController.swift in Sources */,
 				CBD7B233244AD17B00596DA7 /* AppDelegate.swift in Sources */,
 				CBD7B235244AD17B00596DA7 /* SceneDelegate.swift in Sources */,
+				CBD7B257244B514500596DA7 /* BCHHomeViewController.swift in Sources */,
+				CBD7B24F244B50B400596DA7 /* Block.swift in Sources */,
+				CBD7B254244B50FF00596DA7 /* String+Extensions.swift in Sources */,
 				CBD7B248244AD4D300596DA7 /* BCHLaunchScreenView.swift in Sources */,
+				CBD7B24D244AE90F00596DA7 /* Transaction.swift in Sources */,
+				CBD7B251244B50D700596DA7 /* Blockchain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
