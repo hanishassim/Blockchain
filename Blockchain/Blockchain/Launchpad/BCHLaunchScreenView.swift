@@ -16,7 +16,7 @@ class BCHLaunchScreenView: UIView {
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.separatorStyle = .none
-        tableView.backgroundColor = .red
+        tableView.backgroundColor = .white
         tableView.showsVerticalScrollIndicator = false
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableView.automaticDimension
