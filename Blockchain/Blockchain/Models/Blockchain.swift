@@ -8,17 +8,29 @@
 
 import Foundation
 
-class Blockchain {
+class Blockchain: Codable {
     private (set) var blocks = [Block]()
+    private (set) var smartContracts: [SmartContract] = [TransactionTypeSmartContract()]
+    
+    // To exclude smartContracts from decoding
+    private enum CodingKeys: CodingKey {
+        case blocks
+    }
     
     init(initialBlock: Block) {
         addBlock(initialBlock)
     }
     
     func addBlock(_ block: Block) {
+        // first block
         if blocks.isEmpty {
             block.previousHash = "00000000"
             block.hash = generateHash(for: block)
+        }
+        
+        // Apply smart contracts
+        for contract in smartContracts {
+            block.transactions.forEach { contract.apply($0) }
         }
         
         blocks.append(block)

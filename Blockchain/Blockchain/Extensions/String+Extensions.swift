@@ -11,6 +11,6 @@ import CryptoKit
 
 extension String {
     var sha1Hash: String {
-        return SHA256.hash(data: Data(self.utf8)).description
+        return SHA256.hash(data: Data(self.utf8)).hexString
     }
 }

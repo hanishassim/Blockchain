@@ -33,12 +33,16 @@ class BCHLaunchScreenViewController: UIViewController {
         
         let initalBlock = Block()
         let blockchain = Blockchain(initialBlock: initalBlock)
-        
-        let transaction = Transaction(from: "John", to: "Dan", amount: 31)
+        let transaction = Transaction(from: "John", to: "Dan", amount: 31, transactionType: .domestic)
         print("---------------------------------")
         let block = blockchain.getNextBlock(transactions: [transaction])
         
         blockchain.addBlock(block)
+        
+        let data = try! JSONEncoder().encode(blockchain)
+        guard let prettyJSON = data.prettyJSON else { return }
+        
+        print(prettyJSON)
     }
 }
 

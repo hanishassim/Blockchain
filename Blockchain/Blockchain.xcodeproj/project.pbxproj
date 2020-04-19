@@ -18,6 +18,9 @@
 		CBD7B251244B50D700596DA7 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B250244B50D700596DA7 /* Blockchain.swift */; };
 		CBD7B254244B50FF00596DA7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B253244B50FF00596DA7 /* String+Extensions.swift */; };
 		CBD7B257244B514500596DA7 /* BCHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B256244B514500596DA7 /* BCHHomeViewController.swift */; };
+		CBD7B259244BEC9400596DA7 /* TransactionTypeSmartContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B258244BEC9400596DA7 /* TransactionTypeSmartContract.swift */; };
+		CBD7B25B244BEECE00596DA7 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B25A244BEECE00596DA7 /* Data+Extensions.swift */; };
+		CBD7B25D244BF25000596DA7 /* Digest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B25C244BF25000596DA7 /* Digest+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		CBD7B250244B50D700596DA7 /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
 		CBD7B253244B50FF00596DA7 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		CBD7B256244B514500596DA7 /* BCHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCHHomeViewController.swift; sourceTree = "<group>"; };
+		CBD7B258244BEC9400596DA7 /* TransactionTypeSmartContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTypeSmartContract.swift; sourceTree = "<group>"; };
+		CBD7B25A244BEECE00596DA7 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		CBD7B25C244BF25000596DA7 /* Digest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Digest+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 				CBD7B24C244AE90F00596DA7 /* Transaction.swift */,
 				CBD7B24E244B50B400596DA7 /* Block.swift */,
 				CBD7B250244B50D700596DA7 /* Blockchain.swift */,
+				CBD7B258244BEC9400596DA7 /* TransactionTypeSmartContract.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -102,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				CBD7B253244B50FF00596DA7 /* String+Extensions.swift */,
+				CBD7B25A244BEECE00596DA7 /* Data+Extensions.swift */,
+				CBD7B25C244BF25000596DA7 /* Digest+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,7 +200,10 @@
 				CBD7B257244B514500596DA7 /* BCHHomeViewController.swift in Sources */,
 				CBD7B24F244B50B400596DA7 /* Block.swift in Sources */,
 				CBD7B254244B50FF00596DA7 /* String+Extensions.swift in Sources */,
+				CBD7B259244BEC9400596DA7 /* TransactionTypeSmartContract.swift in Sources */,
 				CBD7B248244AD4D300596DA7 /* BCHLaunchScreenView.swift in Sources */,
+				CBD7B25B244BEECE00596DA7 /* Data+Extensions.swift in Sources */,
+				CBD7B25D244BF25000596DA7 /* Digest+Extensions.swift in Sources */,
 				CBD7B24D244AE90F00596DA7 /* Transaction.swift in Sources */,
 				CBD7B251244B50D700596DA7 /* Blockchain.swift in Sources */,
 			);
