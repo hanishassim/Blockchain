@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBD71F8F244C060800CE94FF /* BlockchainCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD71F8E244C05E900CE94FF /* BlockchainCore.framework */; };
+		CBD72012244C220B00CE94FF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CBD72011244C220A00CE94FF /* README.md */; };
 		CBD7B233244AD17B00596DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B232244AD17A00596DA7 /* AppDelegate.swift */; };
 		CBD7B235244AD17B00596DA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B234244AD17B00596DA7 /* SceneDelegate.swift */; };
 		CBD7B237244AD17B00596DA7 /* BCHLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B236244AD17B00596DA7 /* BCHLaunchScreenViewController.swift */; };
@@ -18,9 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CBD71F8D244C05E900CE94FF /* PBXContainerItemProxy */ = {
+		CBD7200B244C21B500CE94FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */;
+			containerPortal = CBD72007244C21B500CE94FF /* BlockchainCore.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = CBD7B4B0244BFE7B00596DA7;
 			remoteInfo = BlockchainCore;
@@ -28,7 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BlockchainCore.xcodeproj; path = ../BlockchainCore/BlockchainCore.xcodeproj; sourceTree = "<group>"; };
+		CBD72007244C21B500CE94FF /* BlockchainCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BlockchainCore.xcodeproj; path = ../BlockchainCore/BlockchainCore.xcodeproj; sourceTree = "<group>"; };
+		CBD72011244C220A00CE94FF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBD7B22F244AD17A00596DA7 /* blockchain-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "blockchain-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD7B232244AD17A00596DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD7B234244AD17B00596DA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,26 +46,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD71F8F244C060800CE94FF /* BlockchainCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CBD71F8A244C05E800CE94FF /* Products */ = {
+		CBD72008244C21B500CE94FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBD71F8E244C05E900CE94FF /* BlockchainCore.framework */,
+				CBD7200C244C21B500CE94FF /* BlockchainCore.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CBD72010244C220200CE94FF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				CBD72011244C220A00CE94FF /* README.md */,
+			);
+			name = Public;
 			sourceTree = "<group>";
 		};
 		CBD7B226244AD17A00596DA7 = {
 			isa = PBXGroup;
 			children = (
+				CBD72010244C220200CE94FF /* Public */,
+				CBD72007244C21B500CE94FF /* BlockchainCore.xcodeproj */,
 				CBD7B231244AD17A00596DA7 /* blockchain-ios */,
-				CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */,
 				CBD7B230244AD17A00596DA7 /* Products */,
 				CBD7B4A2244BFCF800596DA7 /* Frameworks */,
 			);
@@ -165,8 +174,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CBD71F8A244C05E800CE94FF /* Products */;
-					ProjectRef = CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */;
+					ProductGroup = CBD72008244C21B500CE94FF /* Products */;
+					ProjectRef = CBD72007244C21B500CE94FF /* BlockchainCore.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -177,11 +186,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CBD71F8E244C05E900CE94FF /* BlockchainCore.framework */ = {
+		CBD7200C244C21B500CE94FF /* BlockchainCore.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = BlockchainCore.framework;
-			remoteRef = CBD71F8D244C05E900CE94FF /* PBXContainerItemProxy */;
+			remoteRef = CBD7200B244C21B500CE94FF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -191,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD72012244C220B00CE94FF /* README.md in Resources */,
 				CBD7B24A244ADF5E00596DA7 /* LaunchScreen.storyboard in Resources */,
 				CBD7B23C244AD17D00596DA7 /* Assets.xcassets in Resources */,
 			);
