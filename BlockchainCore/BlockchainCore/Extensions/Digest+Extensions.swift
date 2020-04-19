@@ -7,8 +7,11 @@
 //
 
 import Foundation
+#if canImport(CryptoKit)
 import CryptoKit
+#endif
 
+@available(iOS 13, macOS 10.15, *)
 extension Digest {
     var bytes: [UInt8] { Array(makeIterator()) }
     var data: Data { Data(bytes) }
@@ -17,3 +20,4 @@ extension Digest {
         bytes.map { String(format: "%02X", $0) }.joined()
     }
 }
+

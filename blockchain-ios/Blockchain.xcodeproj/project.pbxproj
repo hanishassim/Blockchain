@@ -7,23 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBD71F8F244C060800CE94FF /* BlockchainCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD71F8E244C05E900CE94FF /* BlockchainCore.framework */; };
 		CBD7B233244AD17B00596DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B232244AD17A00596DA7 /* AppDelegate.swift */; };
 		CBD7B235244AD17B00596DA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B234244AD17B00596DA7 /* SceneDelegate.swift */; };
 		CBD7B237244AD17B00596DA7 /* BCHLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B236244AD17B00596DA7 /* BCHLaunchScreenViewController.swift */; };
 		CBD7B23C244AD17D00596DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD7B23B244AD17D00596DA7 /* Assets.xcassets */; };
 		CBD7B248244AD4D300596DA7 /* BCHLaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B247244AD4D300596DA7 /* BCHLaunchScreenView.swift */; };
 		CBD7B24A244ADF5E00596DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD7B249244ADF5E00596DA7 /* LaunchScreen.storyboard */; };
-		CBD7B24D244AE90F00596DA7 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B24C244AE90F00596DA7 /* Transaction.swift */; };
-		CBD7B24F244B50B400596DA7 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B24E244B50B400596DA7 /* Block.swift */; };
-		CBD7B251244B50D700596DA7 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B250244B50D700596DA7 /* Blockchain.swift */; };
-		CBD7B254244B50FF00596DA7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B253244B50FF00596DA7 /* String+Extensions.swift */; };
 		CBD7B257244B514500596DA7 /* BCHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B256244B514500596DA7 /* BCHHomeViewController.swift */; };
-		CBD7B259244BEC9400596DA7 /* TransactionTypeSmartContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B258244BEC9400596DA7 /* TransactionTypeSmartContract.swift */; };
-		CBD7B25B244BEECE00596DA7 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B25A244BEECE00596DA7 /* Data+Extensions.swift */; };
-		CBD7B25D244BF25000596DA7 /* Digest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B25C244BF25000596DA7 /* Digest+Extensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CBD71F8D244C05E900CE94FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CBD7B4B0244BFE7B00596DA7;
+			remoteInfo = BlockchainCore;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BlockchainCore.xcodeproj; path = ../BlockchainCore/BlockchainCore.xcodeproj; sourceTree = "<group>"; };
 		CBD7B22F244AD17A00596DA7 /* Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blockchain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD7B232244AD17A00596DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD7B234244AD17B00596DA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,14 +37,7 @@
 		CBD7B240244AD17D00596DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD7B247244AD4D300596DA7 /* BCHLaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCHLaunchScreenView.swift; sourceTree = "<group>"; };
 		CBD7B249244ADF5E00596DA7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CBD7B24C244AE90F00596DA7 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
-		CBD7B24E244B50B400596DA7 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
-		CBD7B250244B50D700596DA7 /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
-		CBD7B253244B50FF00596DA7 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		CBD7B256244B514500596DA7 /* BCHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCHHomeViewController.swift; sourceTree = "<group>"; };
-		CBD7B258244BEC9400596DA7 /* TransactionTypeSmartContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTypeSmartContract.swift; sourceTree = "<group>"; };
-		CBD7B25A244BEECE00596DA7 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
-		CBD7B25C244BF25000596DA7 /* Digest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Digest+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD71F8F244C060800CE94FF /* BlockchainCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBD71F8A244C05E800CE94FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBD71F8E244C05E900CE94FF /* BlockchainCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CBD7B226244AD17A00596DA7 = {
 			isa = PBXGroup;
 			children = (
+				CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */,
 				CBD7B231244AD17A00596DA7 /* Blockchain */,
 				CBD7B230244AD17A00596DA7 /* Products */,
+				CBD7B4A2244BFCF800596DA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				CBD7B255244B512000596DA7 /* Controllers */,
-				CBD7B252244B50EE00596DA7 /* Extensions */,
-				CBD7B24B244AE86200596DA7 /* Models */,
 				CBD7B249244ADF5E00596DA7 /* LaunchScreen.storyboard */,
 				CBD7B246244AD4B800596DA7 /* Launchpad */,
 				CBD7B232244AD17A00596DA7 /* AppDelegate.swift */,
@@ -94,33 +101,19 @@
 			path = Launchpad;
 			sourceTree = "<group>";
 		};
-		CBD7B24B244AE86200596DA7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CBD7B24C244AE90F00596DA7 /* Transaction.swift */,
-				CBD7B24E244B50B400596DA7 /* Block.swift */,
-				CBD7B250244B50D700596DA7 /* Blockchain.swift */,
-				CBD7B258244BEC9400596DA7 /* TransactionTypeSmartContract.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CBD7B252244B50EE00596DA7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CBD7B253244B50FF00596DA7 /* String+Extensions.swift */,
-				CBD7B25A244BEECE00596DA7 /* Data+Extensions.swift */,
-				CBD7B25C244BF25000596DA7 /* Digest+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		CBD7B255244B512000596DA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				CBD7B256244B514500596DA7 /* BCHHomeViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CBD7B4A2244BFCF800596DA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,12 +163,28 @@
 			mainGroup = CBD7B226244AD17A00596DA7;
 			productRefGroup = CBD7B230244AD17A00596DA7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CBD71F8A244C05E800CE94FF /* Products */;
+					ProjectRef = CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CBD7B22E244AD17A00596DA7 /* Blockchain */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CBD71F8E244C05E900CE94FF /* BlockchainCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BlockchainCore.framework;
+			remoteRef = CBD71F8D244C05E900CE94FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CBD7B22D244AD17A00596DA7 /* Resources */ = {
@@ -198,14 +207,7 @@
 				CBD7B233244AD17B00596DA7 /* AppDelegate.swift in Sources */,
 				CBD7B235244AD17B00596DA7 /* SceneDelegate.swift in Sources */,
 				CBD7B257244B514500596DA7 /* BCHHomeViewController.swift in Sources */,
-				CBD7B24F244B50B400596DA7 /* Block.swift in Sources */,
-				CBD7B254244B50FF00596DA7 /* String+Extensions.swift in Sources */,
-				CBD7B259244BEC9400596DA7 /* TransactionTypeSmartContract.swift in Sources */,
 				CBD7B248244AD4D300596DA7 /* BCHLaunchScreenView.swift in Sources */,
-				CBD7B25B244BEECE00596DA7 /* Data+Extensions.swift in Sources */,
-				CBD7B25D244BF25000596DA7 /* Digest+Extensions.swift in Sources */,
-				CBD7B24D244AE90F00596DA7 /* Transaction.swift in Sources */,
-				CBD7B251244B50D700596DA7 /* Blockchain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +334,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z45YCKTY4V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Blockchain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -350,6 +356,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z45YCKTY4V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Blockchain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

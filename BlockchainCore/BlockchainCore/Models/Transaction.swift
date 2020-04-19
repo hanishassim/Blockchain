@@ -8,19 +8,19 @@
 
 import Foundation
 
-enum TransactionType: String, Codable {
+public enum TransactionType: String, Codable {
     case domestic
     case international
 }
 
-class Transaction: Codable {
+public final class Transaction: Codable {
     var from: String
     var to: String
     var amount: Double
     var fees: Double = 0
     var transactionType: TransactionType
     
-    init(from: String, to: String, amount: Double, transactionType: TransactionType) {
+    public init(from: String, to: String, amount: Double, transactionType: TransactionType) {
         self.from = from
         self.to = to
         self.amount = amount

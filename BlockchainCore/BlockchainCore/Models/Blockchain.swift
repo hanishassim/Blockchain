@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Blockchain: Codable {
+public final class Blockchain: Codable {
     private (set) var blocks = [Block]()
     private (set) var smartContracts: [SmartContract] = [TransactionTypeSmartContract()]
     
@@ -17,11 +17,11 @@ class Blockchain: Codable {
         case blocks
     }
     
-    init(initialBlock: Block) {
+    public init(initialBlock: Block) {
         addBlock(initialBlock)
     }
     
-    func addBlock(_ block: Block) {
+    public func addBlock(_ block: Block) {
         // first block
         if blocks.isEmpty {
             block.previousHash = "00000000"
@@ -36,7 +36,7 @@ class Blockchain: Codable {
         blocks.append(block)
     }
     
-    func getNextBlock(transactions: [Transaction]) -> Block {
+    public func getNextBlock(transactions: [Transaction]) -> Block {
         let block = Block()
         transactions.forEach { transaction in
             block.addTransaction(transaction: transaction)
@@ -55,8 +55,15 @@ class Blockchain: Codable {
     }
     
     private func generateHash(for block: Block) -> String {
-        let hash = block.key.sha1Hash
-        print(hash)
+        let hash = block.key.sha256Hash
+
         return hash
+    }
+    
+    public var print: NSString {
+        let data = try! JSONEncoder().encode(self)
+        guard let prettyJSON = data.prettyJSON else { return "" }
+        
+        return prettyJSON
     }
 }

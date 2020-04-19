@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Block: Codable {
+public final class Block: Codable {
     var index: Int = 0
     var previousHash: String = ""
     var hash: String!
@@ -25,7 +25,7 @@ class Block: Codable {
         }
     }
     
-    init() {
+    public init() {
         nonce = 0
     }
     

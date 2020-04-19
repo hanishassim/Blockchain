@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BlockchainCore
 
 class BCHLaunchScreenViewController: UIViewController {
     

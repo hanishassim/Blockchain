@@ -7,6 +7,10 @@
 //
 
 import Foundation
+#if canImport(CryptoKit)
+import CryptoKit
+#endif
+import CommonCrypto
 
 extension Data {
     public var prettyJSON: NSString? { /// NSString gives us a nice sanitized debugDescription
@@ -15,5 +19,26 @@ extension Data {
             let prettyString = NSString(data: data, encoding: String.Encoding.utf8.rawValue) else { return nil }
         
         return prettyString
+    }
+    
+    public func sha256() -> Data {
+        if #available(iOS 13, macOS 10.15, *) {
+            return self.sha256_iOS13()
+        } else {
+            return self.sha256_legacy()
+        }
+    }
+}
+
+@available(iOS 13.0, macOS 10.15, *)
+private extension Data {
+    func sha256_iOS13() -> Data {
+        return SHA256.hash(data: self).data
+    }
+}
+
+private extension Data {
+    func sha256_legacy() -> Data {
+        return Data()
     }
 }

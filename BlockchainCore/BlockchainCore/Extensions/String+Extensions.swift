@@ -7,10 +7,9 @@
 //
 
 import Foundation
-import CryptoKit
 
 extension String {
-    var sha1Hash: String {
-        return SHA256.hash(data: Data(self.utf8)).hexString
+    var sha256Hash: String {
+        return String(decoding: Data(self.utf8).sha256(), as: UTF8.self)
     }
 }
