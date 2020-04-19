@@ -7,9 +7,12 @@
 //
 
 import UIKit
-import BlockchainCore
 
 class BCHLaunchScreenViewController: UIViewController {
+    
+    // MARK: - Properties -
+    
+    // MARK: Internal
     
     var rootView: BCHLaunchScreenView {
         return view as! BCHLaunchScreenView
@@ -24,26 +27,20 @@ class BCHLaunchScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        goToHome()
+        let delayInSeconds = 1.0
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
+            self.goToHome()
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
     }
     
     private func goToHome() {
-//        let vc = BCHHomeViewController()
-//        view.window?.rootViewController = vc
-//        view.window?.makeKeyAndVisible()
-        
-        let initalBlock = Block()
-        let blockchain = Blockchain(initialBlock: initalBlock)
-        let transaction = Transaction(from: "John", to: "Dan", amount: 31, transactionType: .domestic)
-        print("---------------------------------")
-        let block = blockchain.getNextBlock(transactions: [transaction])
-        
-        blockchain.addBlock(block)
-        
-        let data = try! JSONEncoder().encode(blockchain)
-        guard let prettyJSON = data.prettyJSON else { return }
-        
-        print(prettyJSON)
+        let vc = BCHHomeViewController()
+        view.window?.rootViewController = vc
+        view.window?.makeKeyAndVisible()
     }
 }
 

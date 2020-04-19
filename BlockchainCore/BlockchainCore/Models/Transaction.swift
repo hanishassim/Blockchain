@@ -13,7 +13,7 @@ public enum TransactionType: String, Codable {
     case international
 }
 
-public final class Transaction: Codable {
+public class Transaction: Codable {
     var from: String
     var to: String
     var amount: Double
@@ -28,3 +28,14 @@ public final class Transaction: Codable {
     }
 }
 
+#if  canImport(Vapor) && canImport(FluentSQLite)
+
+import FluentSQLite
+import Vapor
+
+public extension Transaction: SQLiteModel {}
+public extension Transaction: Migration {}
+public extension Transaction: Content {}
+public extension Transaction: Parameter {}
+
+#endif

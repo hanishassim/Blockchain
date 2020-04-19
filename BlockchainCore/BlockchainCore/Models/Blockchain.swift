@@ -8,7 +8,7 @@
 
 import Foundation
 
-public final class Blockchain: Codable {
+public class Blockchain: Codable {
     private (set) var blocks = [Block]()
     private (set) var smartContracts: [SmartContract] = [TransactionTypeSmartContract()]
     
@@ -67,3 +67,15 @@ public final class Blockchain: Codable {
         return prettyJSON
     }
 }
+
+#if  canImport(Vapor) && canImport(FluentSQLite)
+
+import FluentSQLite
+import Vapor
+
+public extension Blockchain: SQLiteModel {}
+public extension Blockchain: Migration {}
+public extension Blockchain: Content {}
+public extension Blockchain: Parameter {}
+
+#endif

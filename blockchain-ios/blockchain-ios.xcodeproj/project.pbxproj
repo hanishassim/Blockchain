@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CBD72012244C220B00CE94FF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CBD72011244C220A00CE94FF /* README.md */; };
+		CBD7201A244C922A00CE94FF /* BCHHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD72019244C922A00CE94FF /* BCHHomeView.swift */; };
+		CBD7201E244C9C0E00CE94FF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7201D244C9C0E00CE94FF /* Constants.swift */; };
+		CBD72021244CA6C900CE94FF /* BCHTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD72020244CA6C900CE94FF /* BCHTextFieldTableViewCell.swift */; };
 		CBD7B233244AD17B00596DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B232244AD17A00596DA7 /* AppDelegate.swift */; };
 		CBD7B235244AD17B00596DA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B234244AD17B00596DA7 /* SceneDelegate.swift */; };
 		CBD7B237244AD17B00596DA7 /* BCHLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B236244AD17B00596DA7 /* BCHLaunchScreenViewController.swift */; };
@@ -30,6 +33,9 @@
 /* Begin PBXFileReference section */
 		CBD72007244C21B500CE94FF /* BlockchainCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BlockchainCore.xcodeproj; path = ../BlockchainCore/BlockchainCore.xcodeproj; sourceTree = "<group>"; };
 		CBD72011244C220A00CE94FF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBD72019244C922A00CE94FF /* BCHHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCHHomeView.swift; sourceTree = "<group>"; };
+		CBD7201D244C9C0E00CE94FF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBD72020244CA6C900CE94FF /* BCHTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCHTextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		CBD7B22F244AD17A00596DA7 /* blockchain-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "blockchain-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD7B232244AD17A00596DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD7B234244AD17B00596DA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +74,22 @@
 			name = Public;
 			sourceTree = "<group>";
 		};
+		CBD7201C244C9BFD00CE94FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBD7201D244C9C0E00CE94FF /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBD7201F244CA6BC00CE94FF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBD72020244CA6C900CE94FF /* BCHTextFieldTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CBD7B226244AD17A00596DA7 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +112,8 @@
 		CBD7B231244AD17A00596DA7 /* blockchain-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CBD7201F244CA6BC00CE94FF /* Cells */,
+				CBD7201C244C9BFD00CE94FF /* Resources */,
 				CBD7B255244B512000596DA7 /* Controllers */,
 				CBD7B249244ADF5E00596DA7 /* LaunchScreen.storyboard */,
 				CBD7B246244AD4B800596DA7 /* Launchpad */,
@@ -114,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				CBD7B256244B514500596DA7 /* BCHHomeViewController.swift */,
+				CBD72019244C922A00CE94FF /* BCHHomeView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,8 +241,11 @@
 				CBD7B237244AD17B00596DA7 /* BCHLaunchScreenViewController.swift in Sources */,
 				CBD7B233244AD17B00596DA7 /* AppDelegate.swift in Sources */,
 				CBD7B235244AD17B00596DA7 /* SceneDelegate.swift in Sources */,
+				CBD72021244CA6C900CE94FF /* BCHTextFieldTableViewCell.swift in Sources */,
 				CBD7B257244B514500596DA7 /* BCHHomeViewController.swift in Sources */,
+				CBD7201E244C9C0E00CE94FF /* Constants.swift in Sources */,
 				CBD7B248244AD4D300596DA7 /* BCHLaunchScreenView.swift in Sources */,
+				CBD7201A244C922A00CE94FF /* BCHHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

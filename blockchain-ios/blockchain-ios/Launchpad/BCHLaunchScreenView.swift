@@ -11,17 +11,15 @@ import UIKit
 class BCHLaunchScreenView: UIView {
     // MARK: - Properties -
     
-    // MARK: Public
+    // MARK: Private
     
-    lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.separatorStyle = .none
-        tableView.backgroundColor = .white
-        tableView.showsVerticalScrollIndicator = false
-        tableView.estimatedRowHeight = 44
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Blockchain POC"
+        label.font = .systemFont(ofSize: 32, weight: .bold)
+        label.textColor = .black
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
     // MARK: - Initializer and Lifecycle Methods -
@@ -42,14 +40,21 @@ class BCHLaunchScreenView: UIView {
     // MARK: Setup Methods
     
     private func setupSubviews() {
-        addSubview(tableView)
+        addSubview(titleLabel)
         
         NSLayoutConstraint.activate([
-            // tableView
-            tableView.topAnchor.constraint(equalTo: topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: trailingAnchor)
+            // titleLabel
+            titleLabel.leadingAnchor.constraint(greaterThanOrEqualTo: leadingAnchor, constant: 24),
+            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            titleLabel.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: 24),
+            titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = bounds
+        gradientLayer.colors = [UIColor.yellow.cgColor,
+                                UIColor.white.cgColor,
+                                UIColor.cyan.cgColor]
+        layer.insertSublayer(gradientLayer, at: 0)
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public final class Block: Codable {
+public class Block: Codable {
     var index: Int = 0
     var previousHash: String = ""
     var hash: String!
@@ -33,3 +33,15 @@ public final class Block: Codable {
         transactions.append(transaction)
     }
 }
+
+#if  canImport(Vapor) && canImport(FluentSQLite)
+
+import FluentSQLite
+import Vapor
+
+public extension Block: SQLiteModel {}
+public extension Block: Migration {}
+public extension Block: Content {}
+public extension Block: Parameter {}
+
+#endif

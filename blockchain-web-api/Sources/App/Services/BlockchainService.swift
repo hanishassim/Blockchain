@@ -18,4 +18,12 @@ class BlockchainService {
     func getBlockchain() -> Blockchain {
         return blockchain
     }
+    
+    func getNextBlock(transactions: [Transaction]) -> Block {
+        let block = blockchain.getNextBlock(transactions: transactions)
+        
+        blockchain.addBlock(block)
+        
+        return block
+    }
 }

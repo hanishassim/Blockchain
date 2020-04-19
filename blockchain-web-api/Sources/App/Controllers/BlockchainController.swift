@@ -22,6 +22,10 @@ class BlockchainController {
         }
     }
     
+    func postMine(request: Request, transaction: Transaction) -> Block {
+        return blockchainService.getNextBlock(transactions: [transaction])
+    }
+    
     func greet(request: Request) -> Future<String> {
         Future.map(on: request) { () -> String in
             return "Welcome to Blockchain"
