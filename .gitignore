@@ -161,3 +161,4 @@ Dependencies/
 
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
+*.xcworkspacedata
