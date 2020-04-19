@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BlockchainCore.xcodeproj; path = ../BlockchainCore/BlockchainCore.xcodeproj; sourceTree = "<group>"; };
-		CBD7B22F244AD17A00596DA7 /* Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blockchain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD7B22F244AD17A00596DA7 /* blockchain-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "blockchain-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD7B232244AD17A00596DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD7B234244AD17B00596DA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CBD7B236244AD17B00596DA7 /* BCHLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCHLaunchScreenViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +63,8 @@
 		CBD7B226244AD17A00596DA7 = {
 			isa = PBXGroup;
 			children = (
+				CBD7B231244AD17A00596DA7 /* blockchain-ios */,
 				CBD71F89244C05E800CE94FF /* BlockchainCore.xcodeproj */,
-				CBD7B231244AD17A00596DA7 /* Blockchain */,
 				CBD7B230244AD17A00596DA7 /* Products */,
 				CBD7B4A2244BFCF800596DA7 /* Frameworks */,
 			);
@@ -73,12 +73,12 @@
 		CBD7B230244AD17A00596DA7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBD7B22F244AD17A00596DA7 /* Blockchain.app */,
+				CBD7B22F244AD17A00596DA7 /* blockchain-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBD7B231244AD17A00596DA7 /* Blockchain */ = {
+		CBD7B231244AD17A00596DA7 /* blockchain-ios */ = {
 			isa = PBXGroup;
 			children = (
 				CBD7B255244B512000596DA7 /* Controllers */,
@@ -89,7 +89,7 @@
 				CBD7B23B244AD17D00596DA7 /* Assets.xcassets */,
 				CBD7B240244AD17D00596DA7 /* Info.plist */,
 			);
-			path = Blockchain;
+			path = "blockchain-ios";
 			sourceTree = "<group>";
 		};
 		CBD7B246244AD4B800596DA7 /* Launchpad */ = {
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBD7B22E244AD17A00596DA7 /* Blockchain */ = {
+		CBD7B22E244AD17A00596DA7 /* blockchain-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBD7B243244AD17D00596DA7 /* Build configuration list for PBXNativeTarget "Blockchain" */;
+			buildConfigurationList = CBD7B243244AD17D00596DA7 /* Build configuration list for PBXNativeTarget "blockchain-ios" */;
 			buildPhases = (
 				CBD7B22B244AD17A00596DA7 /* Sources */,
 				CBD7B22C244AD17A00596DA7 /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = Blockchain;
+			name = "blockchain-ios";
 			productName = Blockchain;
-			productReference = CBD7B22F244AD17A00596DA7 /* Blockchain.app */;
+			productReference = CBD7B22F244AD17A00596DA7 /* blockchain-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBD7B22A244AD17A00596DA7 /* Build configuration list for PBXProject "Blockchain" */;
+			buildConfigurationList = CBD7B22A244AD17A00596DA7 /* Build configuration list for PBXProject "blockchain-ios" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,7 +171,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				CBD7B22E244AD17A00596DA7 /* Blockchain */,
+				CBD7B22E244AD17A00596DA7 /* blockchain-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -338,7 +338,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Blockchain/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/blockchain-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,7 +360,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Blockchain/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/blockchain-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBD7B22A244AD17A00596DA7 /* Build configuration list for PBXProject "Blockchain" */ = {
+		CBD7B22A244AD17A00596DA7 /* Build configuration list for PBXProject "blockchain-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBD7B241244AD17D00596DA7 /* Debug */,
@@ -384,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBD7B243244AD17D00596DA7 /* Build configuration list for PBXNativeTarget "Blockchain" */ = {
+		CBD7B243244AD17D00596DA7 /* Build configuration list for PBXNativeTarget "blockchain-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBD7B244244AD17D00596DA7 /* Debug */,
