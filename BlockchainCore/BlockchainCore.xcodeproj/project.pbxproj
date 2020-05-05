@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBD72028244DE84C00CE94FF /* BlockchainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD72027244DE84C00CE94FF /* BlockchainNode.swift */; };
 		CBD7B4B5244BFE7B00596DA7 /* BlockchainCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD7B4B3244BFE7B00596DA7 /* BlockchainCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBD7B4D4244BFF8700596DA7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B4CC244BFF8700596DA7 /* String+Extensions.swift */; };
 		CBD7B4D5244BFF8700596DA7 /* Digest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7B4CD244BFF8700596DA7 /* Digest+Extensions.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CBD72027244DE84C00CE94FF /* BlockchainNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainNode.swift; sourceTree = "<group>"; };
 		CBD7B4B0244BFE7B00596DA7 /* BlockchainCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlockchainCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD7B4B3244BFE7B00596DA7 /* BlockchainCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockchainCore.h; sourceTree = "<group>"; };
 		CBD7B4B4244BFE7B00596DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				CBD7B4D1244BFF8700596DA7 /* Blockchain.swift */,
 				CBD7B4D2244BFF8700596DA7 /* Transaction.swift */,
 				CBD7B4D3244BFF8700596DA7 /* TransactionTypeSmartContract.swift */,
+				CBD72027244DE84C00CE94FF /* BlockchainNode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				CBD7B4D6244BFF8700596DA7 /* Data+Extensions.swift in Sources */,
 				CBD7B4D7244BFF8700596DA7 /* Block.swift in Sources */,
 				CBD7B4D9244BFF8700596DA7 /* Transaction.swift in Sources */,
+				CBD72028244DE84C00CE94FF /* BlockchainNode.swift in Sources */,
 				CBD7B4D4244BFF8700596DA7 /* String+Extensions.swift in Sources */,
 				CBD7B4D5244BFF8700596DA7 /* Digest+Extensions.swift in Sources */,
 				CBD7B4D8244BFF8700596DA7 /* Blockchain.swift in Sources */,

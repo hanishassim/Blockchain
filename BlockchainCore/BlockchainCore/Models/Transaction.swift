@@ -13,7 +13,7 @@ public enum TransactionType: String, Codable {
     case international
 }
 
-public class Transaction: Codable {
+public final class Transaction: Codable {
     var from: String
     var to: String
     var amount: Double

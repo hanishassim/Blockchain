@@ -8,9 +8,10 @@
 
 import Foundation
 
-public class Blockchain: Codable {
+public final class Blockchain: Codable {
     private (set) var blocks = [Block]()
-    private (set) var smartContracts: [SmartContract] = [TransactionTypeSmartContract()]
+    private (set) var smartContracts = [TransactionTypeSmartContract()]
+    private (set) var nodes = [BlockchainNode]()
     
     // To exclude smartContracts from decoding
     private enum CodingKeys: CodingKey {
@@ -50,12 +51,29 @@ public class Blockchain: Codable {
         return block
     }
     
+    public func registerNodes(nodes: [BlockchainNode]) -> [BlockchainNode] {
+        self.nodes.append(contentsOf: nodes)
+        
+        return self.nodes
+    }
+    
+    public func getNodes() -> [BlockchainNode] {
+        return nodes
+    }
+    
     private func getPreviousBlock() -> Block {
         return blocks[blocks.count - 1]
     }
     
     private func generateHash(for block: Block) -> String {
-        let hash = block.key.sha256Hash
+        var hash = block.key.sha256Hash
+        
+        while !hash.hasPrefix("00") {
+            block.nonce += 1
+            hash = block.key.sha256Hash
+            
+            print(hash)
+        }
 
         return hash
     }

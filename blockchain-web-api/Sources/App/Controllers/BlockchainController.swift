@@ -26,6 +26,14 @@ class BlockchainController {
         return blockchainService.getNextBlock(transactions: [transaction])
     }
     
+    func registerNodes(request: Request, nodes: [BlockchainNode]) -> [BlockchainNode] {
+        return blockchainService.registerNodes(nodes: nodes)
+    }
+    
+    func getNodes(request: Request) -> [BlockchainNode] {
+        return  blockchainService.getNodes()
+    }
+    
     func greet(request: Request) -> Future<String> {
         Future.map(on: request) { () -> String in
             return "Welcome to Blockchain"
